@@ -31,7 +31,7 @@ function getScrollParent(el) {
   }
 
   var parent = el;
-  while (parent = parent.parentNode) {
+  while (parent = parent.parentElement) {
     var style = undefined;
     try {
       style = getComputedStyle(parent);
